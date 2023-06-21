@@ -75,7 +75,7 @@ cursor:default;
 {
     .github_container
     {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
         gap:1.5rem;
 
     }
@@ -85,7 +85,11 @@ cursor:default;
     padding: 2rem;
 
     border-radius: 0  0 2rem 2rem ;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 94b70dbd8ba9fa99f7e3b8f4118aa1d5bf5c8a1e
 
 }
   
