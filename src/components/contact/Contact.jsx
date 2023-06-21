@@ -14,9 +14,19 @@ export const Contact= () => {
   
       emailjs.sendForm('service_ytj7t1m', 'template_th8w7ru', form.current, 'vEFklt8C7OgxLKTYu')
       e.target.reset()
-       
+
+   
+    
+      const sendEmail = (e) => {
+        e.preventDefault();
+        // Code to send the email
+      };
 
     }
+    const handleInputFocus = (e) => {
+      e.target.style.backgroundColor = '#2c2c6c';
+    };
+    
 
     return (
      <section id='contact' className='nav-link contact'>
@@ -48,9 +58,9 @@ export const Contact= () => {
     </div>
 
     <form ref={form} onSubmit={sendEmail}>
-    <input type='text' name='name' placeholder='Your Full Name' required></input>
-    <input type='email' name='email'  placeholder='Your Email' required></input>
-    <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
+    <input type='text' name='name' placeholder='Your Full Name' required onFocus={handleInputFocus}></input>
+    <input type='email' name='email'  placeholder='Your Email' required onFocus={handleInputFocus}></input>
+    <textarea name='message' rows='7' placeholder='Your Message' required onFocus={handleInputFocus}></textarea>
     <button type='submit' name='message' className='btn btn-primary'>Send Message</button>
     </form>
     </div>

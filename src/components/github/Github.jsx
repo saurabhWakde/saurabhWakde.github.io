@@ -2,8 +2,24 @@ import React from 'react'
 import './Github.css'
 import {BsCheckLg} from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
+import GitHubCalendar from 'react-github-calendar';
+const username = 'saurabhWakde';
+const utcOffset = '5:30'; // Replace with the desired UTC offset
+
+const apiUrl = `https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg`;
+
+
 const Github= () => 
 {
+  const MyComponent = () => {
+    return (
+      <div>
+        <h1>GitHub Activity Calendar</h1>
+        <GitHubCalendar username="your-github-username" />
+      </div>
+    );
+  };
+  
   const imgStyle = {
     transition: "0.5s",
   };
@@ -11,6 +27,9 @@ const Github= () =>
     transition: "0.5s",
   };
   const imgStyle2 = {
+    transition: "0.5s",
+  };
+  const imgStyle3 = {
     transition: "0.5s",
   };
   return (
@@ -79,6 +98,8 @@ const Github= () =>
             }}
             />
           </a>
+
+       
    </ul>
    </article>
 
@@ -111,10 +132,42 @@ const Github= () =>
           />
    </a>
    
-   
    </ul>
    
    </article>
+
+   <article className='github'>
+
+   <div className='github_head skills-card'>
+   <h3>Calendar</h3>
+   </div>
+   <ul className='github_list'>
+   <a a href="https://github.com/saurabhWakde" target='_blank'>
+   <img  id='github-streak-stats' 
+            style={{ border: "none", ...imgStyle3 }}
+            align="center"
+            src="https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg"
+            alt="saurabhwakde"
+            onMouseOver={(e) => {
+              e.target.style.opacity = "0";
+              setTimeout(() => {
+                e.target.src = "https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg";
+                e.target.style.opacity = "1";
+              }, 500);
+            }}
+            onMouseOut={(e) => {
+              e.target.style.opacity = "0";
+              setTimeout(() => {
+                e.target.src = "https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg";
+                e.target.style.opacity = "1";
+              }, 500);
+            }}
+          />
+   </a>
+   </ul>
+   
+   </article>
+
 
    </div>
    </section>
@@ -122,3 +175,5 @@ const Github= () =>
 }
 
 export default Github;
+
+

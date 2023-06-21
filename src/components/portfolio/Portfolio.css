@@ -11,6 +11,7 @@
     border-radius:2rem;
     border:1px solid transparent;
     transition: var(--transition);
+    width: 100%;
     
 }
 .portfolio_item:hover
@@ -22,6 +23,7 @@
 {
     border-radius: 1.5rem;
     overflow: hidden;
+    width: 100%;
 }
 .portfolio_item h3
 {
@@ -32,6 +34,14 @@
     display: flex;
     gap:1rem;
     margin-bottom:1rem;
+}
+.portfolio_review
+{
+    color:var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin:0.8rem auto 0;
 }
 
 @media screen  and (max-width: 1024px)

@@ -73,7 +73,7 @@ cursor:default;
 
 @media screen  and (max-width: 600px)
 {
-    .githubs_container
+    .github_container
     {
         grid-template-columns: 1fr;
         gap:1.5rem;
@@ -85,8 +85,14 @@ cursor:default;
     padding: 2rem;
 
     border-radius: 0  0 2rem 2rem ;
-   height: 0.1rem;;
+  
 
 }
   
 }
+.react-github-calendar {
+    background: transparent;;
+    color: red;
+    background-color: none;
+  }
+  

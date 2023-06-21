@@ -51,12 +51,18 @@ form
 }
 input,textarea
 {
+    color: white;
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
+}
+input:hover,textarea:hover
+{
+    background: transparent;;
+    background-color:var(--color-primary-variant) ;
 }
 @media screen  and (max-width: 1024px)
 {
