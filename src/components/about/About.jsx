@@ -6,7 +6,7 @@ import {AiOutlineFieldTime} from 'react-icons/ai'
 import {VscFolderLibrary}  from 'react-icons/vsc'
 const About = () => {
   return (
-   <section id='about' className='about section nav-link about'>
+   <section id='about' className='about section '>
 
 <h5>Get To Know</h5>
 
@@ -54,5 +54,7 @@ I'm a full-stack web developer with experience in HTML, CSS, JavaScript, React.j
    </section>
   )
 }
+
+
 
 export default About;

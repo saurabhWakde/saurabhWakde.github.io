@@ -5,9 +5,9 @@ import { BsGithub } from 'react-icons/bs'
 const Services = () => 
 {
   return (
-   <section id='services skills skills'>
+   <section id='services'>
    <h5>What I Offer</h5>
-   <h2>Services</h2>
+   <h2  id="skills" className='skills-card'>Skills</h2>
    <div className='container services_container'>
    <article className='service'>
 
@@ -16,28 +16,28 @@ const Services = () =>
    </div>
    <ul className='service_list'>
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Embrace lifelong learning.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Embrace lifelong learning.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Explore  new  frameworks<br></br>  regularly.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Explore  new  frameworks<br></br>  regularly.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Stay current with technology.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Stay current with technology.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Adapt to industry changes.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Adapt to industry changes.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Continuous professional development.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Continuous professional development.</p>
    </li>
 
    
@@ -51,28 +51,28 @@ const Services = () =>
    </div>
    <ul className='service_list'>
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>User-friendly website development.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>User-friendly website development.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Website design and development.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Website design and development.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>E-commerce website creation.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>E-commerce website creation.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>Front-end and back-end development.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>Front-end and back-end development.</p>
    </li>
 
    <li>
-   <BsCheckLg className='service_list-icon'/>
-   <p>UI/UX design and implementation.</p>
+   <BsCheckLg className='service_list-icon  skills-card-img'/>
+   <p className='skills-card-name'>UI/UX design and implementation.</p>
    </li>
 
    
@@ -87,22 +87,22 @@ const Services = () =>
    <ul className='service_list'>
    <li>
    <BsCheckLg className='service_list-icon skills-card-img'/>
-   <p>Effective communication and collaboration.</p>
+   <p className='skills-card-name'>Effective communication and collaboration.</p>
    </li>
 
    <li>
    <BsCheckLg className='service_list-icon skills-card-img'/>
-   <p>Problem-solving.</p>
+   <p className='skills-card-name'>Problem-solving.</p>
    </li>
 
    <li>
    <BsCheckLg className='service_list-icon skills-card-img'/>
-   <p>Attention to Detail.</p>
+   <p className='skills-card-name'>Attention to Detail.</p>
    </li>
 
    <li>
    <BsCheckLg className='service_list-icon skills-card-img'/>
-   <p>Active listening and understanding.</p>
+   <p className='skills-card-name'>Active listening and understanding.</p>
    </li>
 
    <li>

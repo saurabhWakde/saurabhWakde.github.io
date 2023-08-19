@@ -11,13 +11,11 @@ const apiUrl = `https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/mast
 
 const Github= () => 
 {
-  const MyComponent = () => {
-    return (
-      <div>
-        <h1>GitHub Activity Calendar</h1>
-        <GitHubCalendar username="your-github-username" />
-      </div>
-    );
+  
+ const handleMouseOver = () => {
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
   };
   
   const imgStyle = {
@@ -33,7 +31,7 @@ const Github= () =>
     transition: "0.5s",
   };
   return (
-   <section id='github  skills skills'>
+   <section id='github  '>
    <h5>Github stats</h5>
    <h2><BsGithub/></h2>
    <div className='container github_container'>
@@ -44,7 +42,8 @@ const Github= () =>
    </div>
    <ul className='github_list'>
    <a href="https://github.com/saurabhWakde" target='_blank'>
-   <img id='github-streak-stats'  src="https://github-readme-stats.vercel.app/api/top-langs/?username=saurabhWakde&layout=compact&hide_border=true&theme=transparent"
+
+   <img id='github-top-langs'  src="https://github-readme-stats.vercel.app/api/top-langs/?username=saurabhWakde&layout=compact&hide_border=true&theme=transparent"
    style={{ border: "none", ...imgStyle2 }}
    align="center"
    alt="saurabhwakde"
@@ -64,7 +63,7 @@ const Github= () =>
    }}
    />
  </a>
-
+ 
    
    </ul>
    
@@ -78,7 +77,7 @@ const Github= () =>
    <ul className='github_list'>
    
    <a href="https://github.com/saurabhWakde" _blank>
-            <img id='github-top-langs'  src="https://github-readme-stats.vercel.app/api?username=saurabhWakde&show_icons=true&theme=transparent&hide_border=true"
+            <img  id="github-stats-card"  src="https://github-readme-stats.vercel.app/api?username=saurabhWakde&show_icons=true&theme=transparent&hide_border=true"
             style={{ border: "none", ...imgStyle1 }}
             align="center"
             alt="saurabhwakde"
@@ -110,7 +109,7 @@ const Github= () =>
    </div>
    <ul className='github_list'>
    <a a href="https://github.com/saurabhWakde" target='_blank'>
-   <img  id='github-streak-stats' 
+   <img id="github-streak-stats" 
             style={{ border: "none", ...imgStyle }}
             align="center"
             src="https://github-readme-streak-stats.herokuapp.com?user=saurabhWakde&theme=transparent&hide_border=true&border_radius=1rem"
@@ -137,36 +136,18 @@ const Github= () =>
    </article>
 
    <article className='github'>
-
    <div className='github_head skills-card'>
-   <h3>Calendar</h3>
+     <h3>Calendar</h3>
    </div>
    <ul className='github_list'>
-   <a a href="https://github.com/saurabhWakde" target='_blank'>
-   <img  id='github-streak-stats' 
-            style={{ border: "none", ...imgStyle3 }}
-            align="center"
-            src="https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg"
-            alt="saurabhwakde"
-            onMouseOver={(e) => {
-              e.target.style.opacity = "0";
-              setTimeout(() => {
-                e.target.src = "https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg";
-                e.target.style.opacity = "1";
-              }, 500);
-            }}
-            onMouseOut={(e) => {
-              e.target.style.opacity = "0";
-              setTimeout(() => {
-                e.target.src = "https://raw.githubusercontent.com/saurabhWakde/saurabhWakde/master/profile-summary-card-output/transparent/4-productive-time.svg";
-                e.target.style.opacity = "1";
-              }, 500);
-            }}
-          />
-   </a>
+     <a href="https://github.com/saurabhWakde" target='_blank'>
+
+     
+       <GitHubCalendar username="saurabhWakde" class="react-activity-calendar" />
+     </a>
    </ul>
-   
-   </article>
+ </article>
+ 
 
 
    </div>

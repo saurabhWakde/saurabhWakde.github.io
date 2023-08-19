@@ -13,6 +13,7 @@ border: 1px solid var(--color-primary);
 height: fit-content;
 transition: var(--transition);
 cursor: pointer;
+height:100%;
 
 }
 .github:hover
@@ -75,7 +76,7 @@ cursor:default;
 {
     .github_container
     {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         gap:1.5rem;
 
     }
@@ -85,18 +86,21 @@ cursor:default;
     padding: 2rem;
 
     border-radius: 0  0 2rem 2rem ;
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 94b70dbd8ba9fa99f7e3b8f4118aa1d5bf5c8a1e
 
 }
   
+.react-activity-calendar
+{
+   width: 100%;
 }
-.react-github-calendar {
-    background: transparent;;
-    color: red;
-    background-color: none;
+}
+  .react-activity-calendar>footer
+  {
+    background: transparent;
+    color: var(--color-primary);
+    transition: var(--transition);
+
   }
+
   

@@ -114,22 +114,23 @@ const Portfolio =()=>
   data.map(({id ,image ,title ,Github ,Demo,  description})=>
   {
     return(
-      <Swiper className= 'mySwipe container  portfolio_item' pagination={{clickable:true}} modules={[Pagination]} spaceBetween={40} slidesPerView={1}>
+      <Swiper className= 'mySwipe container  portfolio_item project-card' pagination={{clickable:true}} modules={[Pagination]} spaceBetween={40} slidesPerView={1}>
       <SwiperSlide key={id} className='portfolio_item'>
 <div className='portfolio_item-image'>
 <img src={image} alt={title}/>
 </div>
-<h3>{title}</h3>
+<h3  className="project-title">{title}</h3>
 <div className='portfolio_item-cta'>
 
-<a href={Github} className='btn' target='_blank'>Github</a>
-<a href={Demo} className='btn btn-primary' target='_blank'>LiveDemo</a>
+<a href={Github} className='btn project-github-link' target='_blank'>Github</a>
+<a href={Demo} className='btn btn-primary project-deployed-link' target='_blank'>LiveDemo</a>
 </div>
 
 </SwiperSlide>
 <SwiperSlide key={id} className='portfolio_item'>
 <h3 style={{textAlign:"center"}}>Description</h3>
-<small className='portfolio_review' >{description}
+<small className='portfolio_review project-description' >{description}
+
 </small>
 
 </SwiperSlide>
