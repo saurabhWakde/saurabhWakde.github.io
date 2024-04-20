@@ -1,7 +1,13 @@
 // --------------------------------------- Project List
+import plantImage from '../Assets/images/projects/plantorderapp.jpg'
+import netmedsImage from '../Assets/images/projects/netmedsImage.png'
+import adventourImage from '../Assets/images/projects/adventour.png'
+import ecotourismImage from '../Assets/images/projects/ecotourism.png'
+
+
 export const ProjectList = [
   {
-    img: "https://drive.google.com/uc?id=1xd0VwHxvPLJza69ozxqQ7Ub6fzvUEHL-",
+    img: `${plantImage}`,
     title: "Plant Order Website",
     description: `Introducing our Plant Order Application - the ultimate green companion at your fingertips. Browse, select, and order from our wide range of exquisite plants for delivery to your doorstep. Embrace nature's beauty and bring it home effortlessly with our user-friendly app.`,
     tech_stack: "HTML, CSS, Javascript, ES6",
@@ -9,7 +15,7 @@ export const ProjectList = [
     demo_url: "https://plant-order-website.vercel.app/",
   },
   {
-    img: "https://drive.google.com/uc?id=16xo-ZgihI4PhlccFpI9BKmJJNVJ-Q9io",
+    img: `${netmedsImage}`,
     title: "Netmeds Clone",
     description:
       `Built a Netmeds clone using HTML, CSS, and JavaScript. Mirrored the online
@@ -20,7 +26,7 @@ export const ProjectList = [
     demo_url: "https://fantastic-khapse-deda88.netlify.app/",
   },
   {
-    img: "https://drive.google.com/uc?id=1S2POr6JAPnIxwyPmt2EkMrJZ-wRCpc6T",
+    img: `${adventourImage}`,
     title: "Adventour : Travel APP",
     description: `Built ADVENTOUR with React, Redux, and Chakra UI for a dynamic and
     responsive user experience. Seamlessly blending these technologies, the
@@ -31,7 +37,7 @@ export const ProjectList = [
     demo_url: "https://adventour-iota.vercel.app/",
   },
   {
-    img: "https://drive.google.com/uc?id=1CRMwStGZxdKuvi5OQUhZabENz__WLPjx",
+    img: `${ecotourismImage}`,
     title: "Eco Tourism",
     description:
       "A implemenation of a travel application concept. Here, you can browse through eco friendly locations around the world, checkout interesting places, and book tickets through a customizable payment interface.",
